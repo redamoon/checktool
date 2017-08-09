@@ -1,0 +1,25 @@
+{
+  "name": "checktool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-beautify": "^2.0.1",
+    "gulp-cache": "^0.4.6",
+    "gulp-jshint": "^2.0.4",
+    "gulp-plato": "^1.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.8",
+    "gulp-w3c-css": "^1.0.1",
+    "gulp-w3c-html-validation": "^0.0.1",
+    "gulp-zip": "^4.0.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "run-sequence": "^2.1.0"
+  }
+}

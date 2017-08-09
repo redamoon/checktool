@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+<file name="source/pages/index.html">
+<error line="5" column="undefined" severity="error" message="A slash was not immediately followed by “&gt;”." />
+<error line="5" column="3" severity="error" message="Element “head” is missing a required instance of child element “title”." />
+<error line="5" column="3" severity="error" message="Element “title&lt;” not allowed as child of element “body” in this context. (Suppressing further errors from this subtree.)" />
+<error line="6" column="1" severity="error" message="Stray end tag “head”." />
+<error line="7" column="1" severity="error" message="Start tag “body” seen but an element of the same type was already open." />
+<error line="9" column="1" severity="error" message="End tag for  “body” seen, but there were unclosed elements." />
+<error line="5" column="3" severity="error" message="Unclosed element “title&lt;”." />
+</file>
+</checkstyle>
