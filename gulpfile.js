@@ -15,13 +15,14 @@ var cache = require("gulp-cache");
 var jshint = require('gulp-jshint');
 var stylish = require('jshint-stylish');
 var plato = require('gulp-plato');
+var axe = require('gulp-axe-webdriver');
 
 /* =========================
   Path
 ========================= */
 var path = {
-  dir : './source/',
-  check_dir : './dest_check/',
+  dir : './_test_source/',
+  check_dir : './_test_dest_check/',
   validations : 'validations/',
   w3c_css_validation : 'w3c_css_validation/',
   w3c_html_validation : 'w3c_html_validation/',
@@ -97,6 +98,18 @@ gulp.task('zip', function() {
   gulp.src(path.check_dir + path.validations + '**')
     .pipe(zip('validations.zip'))
     .pipe(gulp.dest(path.check_dir))
+});
+
+/* =========================
+  aXe アクセシビリティチェックツール
+========================= */
+gulp.task('axe', function(done) {
+  var options = {
+    folderOutputReport: path.check_dir + path.validations + 'accessibility/',
+    saveOutputIn: 'check_accessibility.json',
+    urls: [path.dir + '**/*.html']
+  };
+  return axe(options, done);
 });
 
 /* =========================

@@ -4,11 +4,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "axe": "gulp axe"
   },
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-axe-webdriver": "^1.4.0",
     "gulp-beautify": "^2.0.1",
     "gulp-cache": "^0.4.6",
     "gulp-jshint": "^2.0.4",

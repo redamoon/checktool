@@ -42,7 +42,25 @@ yarn install
 
 ## Start
 
+HTML・CSS・JSのチェックを行う際に実行するコマンド
+
+### Check List
+
+* W3C HTML
+* W3C CSS
+* JSHint
+
 ```
 yarn start
+```
+
+## axe
+
+アクセシビリティのチェックを行う際に実行するコマンド
+
+### Check List
+
+```
+yarn axe
 ```
 
