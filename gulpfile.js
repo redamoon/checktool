@@ -117,5 +117,5 @@ gulp.task('axe', function(done) {
 ========================= */
 gulp.task('default', ['clean'], function(callback) {
   runSequence('check_html', 'check_css',
-    ['css_report', 'html_report', 'check_js'], 'zip', callback);
+    ['css_report', 'html_report', 'check_js', 'axe'], 'zip', callback);
 });

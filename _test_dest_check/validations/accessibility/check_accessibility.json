@@ -1,0 +1,140 @@
+[
+  {
+    "inapplicable": [],
+    "incomplete": [],
+    "passes": [
+      {
+        "description": "Ensures aria-hidden='true' is not present on the document body.",
+        "help": "aria-hidden='true' must not be present on the document body",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/2.3/aria-hidden-body?application=webdriverjs",
+        "id": "aria-hidden-body",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "aria-hidden-body",
+                "impact": "critical",
+                "message": "No aria-hidden attribute is present on document body",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<body>",
+            "impact": null,
+            "none": [],
+            "target": [
+              "html > body"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412"
+        ]
+      },
+      {
+        "description": "Ensures each HTML document contains a non-empty <title> element",
+        "help": "Documents must have <title> element to aid in navigation",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/2.3/document-title?application=webdriverjs",
+        "id": "document-title",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "doc-has-title",
+                "impact": "moderate",
+                "message": "Document has a non-empty <title> element",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<html lang=\"ja\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag242"
+        ]
+      },
+      {
+        "description": "Ensures every HTML document has a lang attribute",
+        "help": "<html> element must have a lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/2.3/html-has-lang?application=webdriverjs",
+        "id": "html-has-lang",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [
+              {
+                "data": null,
+                "id": "has-lang",
+                "impact": "serious",
+                "message": "The <html> element has a lang attribute",
+                "relatedNodes": []
+              }
+            ],
+            "html": "<html lang=\"ja\">",
+            "impact": null,
+            "none": [],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      },
+      {
+        "description": "Ensures the lang attribute of the <html> element has a valid value",
+        "help": "<html> element must have a valid value for the lang attribute",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/2.3/html-lang-valid?application=webdriverjs",
+        "id": "html-lang-valid",
+        "impact": null,
+        "nodes": [
+          {
+            "all": [],
+            "any": [],
+            "html": "<html lang=\"ja\">",
+            "impact": null,
+            "none": [
+              {
+                "data": null,
+                "id": "valid-lang",
+                "impact": "serious",
+                "message": "Value of lang attribute is included in the list of valid languages",
+                "relatedNodes": []
+              }
+            ],
+            "target": [
+              "html"
+            ]
+          }
+        ],
+        "tags": [
+          "cat.language",
+          "wcag2a",
+          "wcag311"
+        ]
+      }
+    ],
+    "timestamp": 1502373674627,
+    "url": "./_test_source/pages/index.html",
+    "violations": [],
+    "time": 260
+  }
+]
